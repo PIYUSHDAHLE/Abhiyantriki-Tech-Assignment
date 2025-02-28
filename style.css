@@ -5,6 +5,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
 margin: 0;
 padding: 0;
@@ -161,12 +163,13 @@ ul li a:hover{
 
 .page1 .title-box{
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     background-color: var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 10px;
 }
 .page1 .title-box h1{
     font-family: "Kanit", sans-serif;
@@ -189,7 +192,7 @@ ul li a:hover{
     flex-direction: row;
     gap: 2rem;
     padding: 0 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .card {
@@ -223,3 +226,129 @@ ul li a:hover{
     font-size: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/*  Page 2 (Goal) Section CSS */
+.page2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--tir);
+    color: var(--primary);
+}
+
+.page2 .title-box{
+    width: 100%;
+    height: 15vh;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page1 .title-box h1{
+    font-family: "Kanit", sans-serif;
+    color: var(--tir);
+}
+
+.goals{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tir);
+    gap: 5rem;
+}
+
+.goals .x{
+    width: 20rem;
+    height: 50vh;
+    background-color: var(--sec);
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.x1 {
+    background-image: url(https://t3.ftcdn.net/jpg/06/19/66/72/360_F_619667223_rUVGbv9G6tbRv62ugBqh2q7IKh0T0XZn.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.x1::before {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.727); 
+}
+.x2 {
+    background-image: url(https://img.etimg.com/thumb/width-1200,height-900,imgsize-58262,resizemode-75,msid-118580149/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-thursday.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.x2::before {
+    content: "";
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.727); 
+}
+.x3 {
+    background-image: url(https://assets.entrepreneur.com/content/3x2/2000/20150713163321-man-business-coffee-phone-smile.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.x3::before {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.727); 
+}
+
+.x p{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Exo 2", sans-serif;
+    
+}
+.x:hover::before{
+    background: rgba(44, 44, 86, 0.778); 
+
+}
+.x:hover{
+ cursor: pointer;
+}
+
