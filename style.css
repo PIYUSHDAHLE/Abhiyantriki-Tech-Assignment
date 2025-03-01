@@ -752,7 +752,6 @@ ul li a:hover{
 /* page 8 */
 
 .page8{
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -815,3 +814,75 @@ ul li a:hover{
     font-size: 14px;
     color: #555;
 }
+
+/* Page 9 */
+
+/* General Styles */
+.page9 {
+
+    background-color: var(--tir);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* About Section */
+.about-section {
+    width: 80%;
+    max-width: 1200px;
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-section h1 {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Company Section */
+.company {
+    display: flex;
+    align-items: center;
+    background: #e8e8e8;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.company:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.company img {
+    width: 220px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
+    padding: 20px;
+}
+
+.company-info {
+    text-align: left;
+}
+
+.company-info h2 {
+    color: var(--primary);
+}
+
+.company-info p {
+    font-size: 14px;
+    color: #555;
+}
+
